@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53b5e2cc-e84e-4c03-83a5-ca8702d3e711" name="Default Changelist" comment="visual theme">
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/contact.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Controller/contact.php" afterDir="false" />
+    <list default="true" id="53b5e2cc-e84e-4c03-83a5-ca8702d3e711" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/test.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/contact.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,10 +89,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Web Page.local">
+    <configuration name="debug" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="local" session_id="PHPSTORM">
+      <method v="2" />
+    </configuration>
     <configuration name="local" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="local">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="PHP Remote Debug.debug" />
+      <item itemvalue="PHP Web Page.local" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -110,7 +115,7 @@
       <workItem from="1568627915827" duration="1814000" />
       <workItem from="1568633865710" duration="18472000" />
       <workItem from="1568712061011" duration="14186000" />
-      <workItem from="1568979548203" duration="251000" />
+      <workItem from="1568979548203" duration="4364000" />
     </task>
     <task id="LOCAL-00001" summary="Add new file">
       <created>1568629657461</created>
@@ -126,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568633969203</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="visual theme finall">
+      <created>1568979897757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568979897757</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +162,7 @@
     <MESSAGE value="vendor upload" />
     <MESSAGE value="vendor upload fix" />
     <MESSAGE value="visual theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="visual theme" />
+    <MESSAGE value="visual theme finall" />
+    <option name="LAST_COMMIT_MESSAGE" value="visual theme finall" />
   </component>
 </project>

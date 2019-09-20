@@ -50,4 +50,13 @@ class contact extends Controller
         return 1123789456;
     }
 
+    /**
+     * @Route("/test", name="test")
+     */
+    public function Testowa()
+    {
+        $siema = "teeeeeest";
+        return $this->render('test.html.twig', ['siema' => $siema]);
+    }
+
 }
