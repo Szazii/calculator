@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53b5e2cc-e84e-4c03-83a5-ca8702d3e711" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/test.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Web Page.local">
+  <component name="RunManager" selected="PHP Remote Debug.debug">
     <configuration name="debug" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="local" session_id="PHPSTORM">
       <method v="2" />
     </configuration>
@@ -115,7 +114,9 @@
       <workItem from="1568627915827" duration="1814000" />
       <workItem from="1568633865710" duration="18472000" />
       <workItem from="1568712061011" duration="14186000" />
-      <workItem from="1568979548203" duration="4364000" />
+      <workItem from="1568979548203" duration="6994000" />
+      <workItem from="1569056576551" duration="4000" />
+      <workItem from="1569152101658" duration="2465000" />
     </task>
     <task id="LOCAL-00001" summary="Add new file">
       <created>1568629657461</created>
@@ -138,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568979897757</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="block testing">
+      <created>1568989336230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568989336230</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +171,18 @@
     <MESSAGE value="vendor upload fix" />
     <MESSAGE value="visual theme" />
     <MESSAGE value="visual theme finall" />
-    <option name="LAST_COMMIT_MESSAGE" value="visual theme finall" />
+    <MESSAGE value="block testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="block testing" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/AppBundle/Controller/TaskController.php</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
