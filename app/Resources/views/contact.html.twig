@@ -1,67 +1,12 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <title>Strona główna</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% extends 'base.html.twig' %}
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-</head>
-<body>
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-
-<header class="jumbotron bg-dark text-white" style="margin: 0; padding: 0; height: 200px">
-
-    <div class="row" style="margin: 0; height: 200px" >
-        <div class="col-2" style=" padding: 0">
-            <img class="img-responsive" src="https://i.imgur.com/Y0DlV.jpg" alt="calculator" style="position: relative; height: 200px; width: 100%">
-        </div>
-        <div class="col-10 text-center">
-            <h1 class="card-title">Kalkulator</h1>
-            <p class="card-text">Wykonuje proste działania matematyczne. A może stać go na wiecej?</p>
-        </div>
-    </div>
-</header>
-
-
-<div class="row" style="margin: 0;" >
-    <nav class="nav flex-column col-2 bg-secondary text-white" style="height:1000px; margin: 0; padding: 0">
-        <a class="nav-link bg-dark" href="{{ path('homepage') }}">Strona główna</a>
-        <a class="nav-link bg-dark active" href="{{ path('calculator') }}">Kalkulator</a>
-        <a class="nav-link bg-dark" href="{{ path('contact') }}">Kontakt</a>
-
-    </nav>
-    <div class="col-10" style="text-align: center">
+{% block body %}
+    <div style="text-align: center">
         <h1>Dane kontaktowe</h1>
         <p>Imie: {{ name }}</p>
         <p>Nazwisko: {{ surname }}</p>
         <p>Ulica: {{ street }}</p>
         <p>Miasto: {{ city }}</p>
         <p>Numer telefonu: {{ phoneNumber }}</p>
-
     </div>
-</div>
-
-
-
-
-<footer class="page-footer font-small bg-dark text-white pt-4" style="bottom: 0; position: fixed; width: 100%">
-
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-        <a href="{{ path('homepage') }}"> Kalkulator</a>
-    </div>
-
-</footer>
-
-
-
-
-</body>
-</html>
+{% endblock %}

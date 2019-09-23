@@ -10,13 +10,13 @@ use Symfony\Component\Routing\Annotation\Route;
 class calculator extends Controller
 {
     /**
-     * @Route("/calculator", name="calculator")
+     * @Route("/calculatorr", name="calculatorr")
      */
 
     public function GetActualDate()
     {
         $actualDate = Date("Y.m.d");
-        return $this->render('calculator.html.twig',[ 'actualDate' => $actualDate ]);
+        return $this->render('calculatorr.html.twig',[ 'actualDate' => $actualDate ]);
     }
 
 }
