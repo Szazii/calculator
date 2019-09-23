@@ -19,7 +19,8 @@ class TaskController extends Controller
         //$task = new Task();
         //$task->setTask('Write a blog post');
         //$task->setDueDate('siema');
-
+        $ma ="2+2*2/2";
+        $p = eval('return '.$ma.';');
         $form = $this->createFormBuilder(/*$task*/)
             ->add('task', TextType::class)
             ->add('dueDate', TextType::class)
@@ -38,6 +39,7 @@ class TaskController extends Controller
             // $entityManager = $this->getDoctrine()->getManager();
             // $entityManager->persist($task);
             // $entityManager->flush();
+
 
             return $this->redirectToRoute('task');
         }

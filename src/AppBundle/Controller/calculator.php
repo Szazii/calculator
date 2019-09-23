@@ -9,14 +9,29 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class calculator extends Controller
 {
-    /**
-     * @Route("/calculatorr", name="calculatorr")
-     */
-
-    public function GetActualDate()
+    public $operation;
+    public $error;
+    
+    public function GetResult()
     {
-        $actualDate = Date("Y.m.d");
-        return $this->render('calculatorr.html.twig',[ 'actualDate' => $actualDate ]);
+        $result = 'as/0d';
+        $ad = strpos($result,'/0');
+        $result = $result[3];
+
+        if ($this->CheckDivisionByZeros()){
+            $this->error = 'Nie dzieli się przez zero!!!';
+            return $this->error;
+        }else{
+            $result = eval('return '.$this->operation.';');
+            return (string)$result;
+        }
+
+    }
+
+    private function CheckDivisionByZeros()
+    {
+        $positionNumber = strpos($this->operation, '/0');
+        return $positionNumber != false and ( strlen($this->operation) == $positionNumber+2 or strpos( '.0123456789', $this->operation[$positionNumber+2]) === false );
     }
 
 }

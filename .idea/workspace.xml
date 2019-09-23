@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53b5e2cc-e84e-4c03-83a5-ca8702d3e711" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Controller/calculatorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/contact.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TaskController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/calculator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/calculator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/calculatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/calculatorController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +121,7 @@
       <workItem from="1568979548203" duration="6994000" />
       <workItem from="1569056576551" duration="4000" />
       <workItem from="1569152101658" duration="13424000" />
-      <workItem from="1569233508041" duration="882000" />
+      <workItem from="1569233508041" duration="19410000" />
     </task>
     <task id="LOCAL-00001" summary="Add new file">
       <created>1568629657461</created>
@@ -159,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569154854426</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="before add events">
+      <created>1569234484657</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569234484657</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +192,7 @@
     <MESSAGE value="visual theme finall" />
     <MESSAGE value="block testing" />
     <MESSAGE value="before create theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="before create theme" />
+    <MESSAGE value="before add events" />
+    <option name="LAST_COMMIT_MESSAGE" value="before add events" />
   </component>
 </project>
