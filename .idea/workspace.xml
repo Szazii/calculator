@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="53b5e2cc-e84e-4c03-83a5-ca8702d3e711" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/calculator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/calculator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/calculatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/calculatorController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,7 +120,7 @@
       <workItem from="1569056576551" duration="4000" />
       <workItem from="1569152101658" duration="13424000" />
       <workItem from="1569233508041" duration="19613000" />
-      <workItem from="1569319040345" duration="11317000" />
+      <workItem from="1569319040345" duration="18170000" />
     </task>
     <task id="LOCAL-00001" summary="Add new file">
       <created>1568629657461</created>
@@ -170,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569262068914</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="validation textbox done">
+      <created>1569332284202</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569332284202</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +207,7 @@
     <MESSAGE value="before create theme" />
     <MESSAGE value="before add events" />
     <MESSAGE value="events added. validation time" />
-    <option name="LAST_COMMIT_MESSAGE" value="events added. validation time" />
+    <MESSAGE value="validation textbox done" />
+    <option name="LAST_COMMIT_MESSAGE" value="validation textbox done" />
   </component>
 </project>

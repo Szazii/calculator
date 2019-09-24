@@ -23,12 +23,14 @@ class calculatorController extends Controller
         $value = '';
 
         $form = $this->createFormBuilder()
-            ->add('Operation', TextType::class, ['constraints' => [
-                new Regex([
-                    'pattern' => '/^[0-9]+[0-9\/\*\-\+\.]+[0-9]+$/',
-                    'message' => 'Błąd w składni działania.'
-                ])
-            ],])
+            ->add('Operation', TextType::class, [
+                'constraints' => [
+                    new Regex([
+                        'pattern' => '/^[0-9]+[0-9\/\*\-\+\.]+[0-9]+$/',
+                        'message' => 'Błąd w składni działania.'
+                    ])
+                ],
+                'attr' => ['class' => 'operation']])
             ->add('save', SubmitType::class, ['label' => '=', 'attr' => ['class' => 'btn btn-primary']])
             ->addEventListener(FormEvents::PRE_SUBMIT, function (FormEvent $event){
                 $data = $event->getData();
