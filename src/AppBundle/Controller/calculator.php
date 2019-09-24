@@ -14,14 +14,12 @@ class calculator extends Controller
     
     public function GetResult()
     {
-        $result = 'as/0d';
-        $ad = strpos($result,'/0');
-        $result = $result[3];
 
-        if ($this->CheckDivisionByZeros()){
+        if ($this->CheckDivisionByZeros()) {
             $this->error = 'Nie dzieli się przez zero!!!';
             return $this->error;
-        }else{
+        }
+        else{
             $result = eval('return '.$this->operation.';');
             return (string)$result;
         }
@@ -33,5 +31,6 @@ class calculator extends Controller
         $positionNumber = strpos($this->operation, '/0');
         return $positionNumber != false and ( strlen($this->operation) == $positionNumber+2 or strpos( '.0123456789', $this->operation[$positionNumber+2]) === false );
     }
+
 
 }

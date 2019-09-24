@@ -11,6 +11,7 @@ use Symfony\Component\Form\Tests\Extension\Core\Type\ButtonTypeTest;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\Regex;
 
 class calculatorController extends Controller
 {
@@ -22,22 +23,30 @@ class calculatorController extends Controller
         $value = '';
 
         $form = $this->createFormBuilder()
-            ->add('Operation', TextType::class/*, ['constraints' => [
-                new Length(['min' => 3]),
-            ],]*/)
+            ->add('Operation', TextType::class, ['constraints' => [
+                new Regex([
+                    'pattern' => '/^[0-9]+[0-9\/\*\-\+\.]+[0-9]+$/',
+                    'message' => 'Błąd w składni działania.'
+                ])
+            ],])
             ->add('save', SubmitType::class, ['label' => '=', 'attr' => ['class' => 'btn btn-primary']])
             ->addEventListener(FormEvents::PRE_SUBMIT, function (FormEvent $event){
                 $data = $event->getData();
                 $form = $event->getForm();
 
-                $calculator = new calculator();
+                /*$calculator = new calculator();
                 $calculator->operation = $data['Operation'];
                 $result = $calculator->GetResult();
 
                 if ($calculator->error == null)
                     $event->setData(['Operation'=>$result]);
                 else
-                    $this->addFlash('error',$calculator->error);
+                    $this->addFlash('error',$calculator->error);*/
+
+                //if ($form->isValid()){
+                    //$this->addFlash('error','dziala');
+                    //$event->setData(['Operation'=>'2345']);
+                //}
 
 
 
@@ -49,18 +58,27 @@ class calculatorController extends Controller
 
 
 
-        /*if ($form->isSubmitted() && $form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
 
+            $calculator = new calculator();
+                $calculator->operation = $form['Operation']->getData(); //$form->getData('Operation');
+                $result = $calculator->GetResult();
 
-            $this->addFlash('success','udalo sie');
-            $value = 'no siema eniu';
+                if ($calculator->error == null)
+                    //$form->setData(['Operation'=>$result]);
+                    $this->addFlash('error',$result);
+                else
+                    $this->addFlash('error',$calculator->error);
+
+            //$this->addFlash('success','udalo sie');
+            //$value = 'no siema eniu';
 
             return $this->render('calculator.html.twig', [
                 'form' => $form->createView(),
                 'myValue' => $value
             ]);
 
-        }*/
+        }
 
         return $this->render('calculator.html.twig', [
             'form' => $form->createView(),
