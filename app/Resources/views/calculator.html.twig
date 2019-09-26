@@ -2,17 +2,48 @@
 
 
 {% block body %}
-    <div style="text-align: center">
-        {{ form_start(form) }}
-        {{ form_widget(form) }}
-        {{ form_end(form) }}
-
-        <button class="siema" value="czesc eniu co tam" id="testowe">siema</button>
-
+    <div style="text-align: center; padding-top: 20px">
         {% for msg in app.session.flashBag.get('error') %}
             <div class="alert alert-danger">
                 {{ msg }}
             </div>
         {% endfor %}
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+        <div>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px; padding: 0px" value="" id="clear">CE</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px; padding: 0px" value="X" id="deleteLast">DEL</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px; padding: 0px" value="%" id="percent">%</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px; padding: 0px" value="/" id="division">/</button>
+        </div>
+        <div>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="7" id="7">7</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="8" id="8">8</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="9" id="9">9</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="*" id="multiplication">X</button>
+
+        </div>
+        <div>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="4" id="4">4</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="5" id="5">5</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="6" id="6">6</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="-" id="substraction">-</button>
+
+        </div>
+        <div>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="1" id="1">1</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="2" id="2">2</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="3" id="3">3</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="+" id="addition">+</button>
+
+        </div>
+        <div>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="." id="dot">.</button>
+            <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px" value="0" id="0">0</button>
+            <button class="btn btn-info text-dark" style="width: 205px; height: 100px; font-size: 30px" value="00" id="00">0 0</button>
+        </div>
+
+
     </div>
 {% endblock %}

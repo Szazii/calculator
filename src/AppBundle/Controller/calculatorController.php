@@ -24,14 +24,28 @@ class calculatorController extends Controller
 
         $form = $this->createFormBuilder()
             ->add('Operation', TextType::class, [
+                'label' => false,
                 'constraints' => [
                     new Regex([
-                        'pattern' => '/^[0-9]+[0-9\/\*\-\+\.]+[0-9]+$/',
+                        'pattern' => '/^[0-9]+[0-9\/\*\-\+\.\%]+[0-9]+$/',
                         'message' => 'Błąd w składni działania.'
                     ])
                 ],
-                'attr' => ['class' => 'operation']])
-            ->add('save', SubmitType::class, ['label' => '=', 'attr' => ['class' => 'btn btn-primary']])
+                'attr' => [
+                    'class' => 'operation',
+                    'id' => 'task-form',
+                    'style' => 'width: 500px; height: 100px; font-size:70px'
+                ]
+            ])
+            ->add('save', SubmitType::class, [
+                'label' => '=',
+                'attr' => [
+                    'class' => 'btn btn-primary',
+                    'id' => 'submitButton',
+                    'value' => 'submit',
+                    'style' => 'width: 410px; height: 100px;'
+                ]
+            ])
             ->addEventListener(FormEvents::PRE_SUBMIT, function (FormEvent $event){
                 $data = $event->getData();
                 $form = $event->getForm();
@@ -58,13 +72,11 @@ class calculatorController extends Controller
         $form->handleRequest($request);
 
 
-
-
         if ($form->isSubmitted() && $form->isValid()) {
 
             $calculator = new calculator();
-                $calculator->operation = $form['Operation']->getData(); //$form->getData('Operation');
-                $result = $calculator->GetResult();
+            $calculator->operation = $form['Operation']->getData(); //$form->getData('Operation');
+            $result = $calculator->GetResult();
 
                 if ($calculator->error == null)
                     //$form->setData(['Operation'=>$result]);
