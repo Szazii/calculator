@@ -2,7 +2,7 @@
 
 
 {% block body %}
-    <div style="text-align: center; padding-top: 20px">
+    <div class="container" style="text-align: center; padding-top: 20px; ">
         {% for msg in app.session.flashBag.get('error') %}
             <div class="alert alert-danger">
                 {{ msg }}
@@ -11,7 +11,7 @@
         {{ form_start(form) }}
         {{ form_widget(form) }}
         {{ form_end(form) }}
-        <div>
+        <div class="col-md-12">
             <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px; padding: 0px" value="" id="clear">CE</button>
             <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px; padding: 0px" value="X" id="deleteLast">DEL</button>
             <button class="btn btn-info text-dark" style="width: 100px; height: 100px; font-size: 30px; padding: 0px" value="%" id="percent">%</button>

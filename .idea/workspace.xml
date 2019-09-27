@@ -5,7 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/calculator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/calculator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/contact.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/calculatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/calculatorController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,7 +124,8 @@
       <workItem from="1569233508041" duration="19613000" />
       <workItem from="1569319040345" duration="24280000" />
       <workItem from="1569414978860" duration="7404000" />
-      <workItem from="1569493135253" duration="10188000" />
+      <workItem from="1569493135253" duration="17782000" />
+      <workItem from="1569569266829" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="Add new file">
       <created>1568629657461</created>
@@ -188,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569342099843</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="validation fix done">
+      <created>1569508801258</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569508801258</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,17 +228,7 @@
     <MESSAGE value="events added. validation time" />
     <MESSAGE value="validation textbox done" />
     <MESSAGE value="jquery tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="jquery tests" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/AppBundle/Controller/calculator.php</url>
-          <line>38</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="validation fix done" />
+    <option name="LAST_COMMIT_MESSAGE" value="validation fix done" />
   </component>
 </project>

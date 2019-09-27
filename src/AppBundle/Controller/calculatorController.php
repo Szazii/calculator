@@ -34,7 +34,7 @@ class calculatorController extends Controller
                 'attr' => [
                     'class' => 'operation',
                     'id' => 'task-form',
-                    'style' => 'width: 500px; height: 100px; font-size:70px'
+                    'style' => 'width: 500px; height: 100px; font-size:70px; border-style: outset; border-radius: 8px; border-width: 8px; color: black'
                 ]
             ])
             ->add('save', SubmitType::class, [
@@ -43,7 +43,7 @@ class calculatorController extends Controller
                     'class' => 'btn btn-primary',
                     'id' => 'submitButton',
                     'value' => 'submit',
-                    'style' => 'width: 410px; height: 100px;'
+                    'style' => 'width: 410px; height: 100px'
                 ]
             ])
             ->addEventListener(FormEvents::PRE_SUBMIT, function (FormEvent $event){
