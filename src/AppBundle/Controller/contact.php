@@ -26,27 +26,27 @@ class contact extends Controller
 
     private function GetRandomName()
     {
-        return 'Daniel';
+        return 'Piotr';
     }
 
     private function GetRandomSurname()
     {
-        return 'Nowak';
+        return 'Prusaczyk';
     }
 
     private function GetRandomStreet()
     {
-        return 'Nowa 24';
+        return 'XXX 24';
     }
 
     private function GetRandomCity()
     {
-        return 'Poznań';
+        return 'Ostrołęka';
     }
 
     private function GetRandomPhoneNumber()
     {
-        return 1123789456;
+        return 788588271;
     }
 
 }

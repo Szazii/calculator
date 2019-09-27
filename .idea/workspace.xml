@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53b5e2cc-e84e-4c03-83a5-ca8702d3e711" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calculator.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/task.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/test.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/Task.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TaskController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/calculator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/calculator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/calculatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/calculatorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/contact.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -130,7 +120,7 @@
       <workItem from="1569319040345" duration="24280000" />
       <workItem from="1569414978860" duration="7404000" />
       <workItem from="1569493135253" duration="17782000" />
-      <workItem from="1569569266829" duration="6279000" />
+      <workItem from="1569569266829" duration="6499000" />
     </task>
     <task id="LOCAL-00001" summary="Add new file">
       <created>1568629657461</created>
@@ -209,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569570148221</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finish version">
+      <created>1569582120912</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1569582120912</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +239,7 @@
     <MESSAGE value="jquery tests" />
     <MESSAGE value="validation fix done" />
     <MESSAGE value="before cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="before cleanup" />
+    <MESSAGE value="finish version" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish version" />
   </component>
 </project>
