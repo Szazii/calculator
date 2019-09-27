@@ -4,7 +4,6 @@
 namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 
@@ -48,15 +47,6 @@ class contact extends Controller
     private function GetRandomPhoneNumber()
     {
         return 1123789456;
-    }
-
-    /**
-     * @Route("/test", name="test")
-     */
-    public function Testowa()
-    {
-        $siema = "teeeeeest";
-        return $this->render('test.html.twig', ['siema' => $siema]);
     }
 
 }
